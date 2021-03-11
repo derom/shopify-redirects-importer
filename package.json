@@ -11,5 +11,5 @@
     "build": "npx tsc",
     "prestart": "yarn run build",
     "start": "node dist/index.js"
-  },
+  }
 }

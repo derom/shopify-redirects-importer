@@ -1,0 +1,10 @@
+[
+	{
+		"path": "/test1",
+		"target": "https://google.com"
+	},
+	{
+		"path": "/test2",
+		"target": "https://google.com"
+	}
+]
