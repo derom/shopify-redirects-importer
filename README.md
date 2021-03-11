@@ -10,5 +10,5 @@ This script helps to import a huge amount of redirects into a Shopify shop.
 * Launch the script ```yarn start ```
 
 # Launch locally in docker
-* ```sudo docker build -t shopify-redirects .```
-* ```sudo docker run shopify-redirects:latest```
+* ```sudo docker build -t shopify-redirects-importer .```
+* ```sudo docker run shopify-redirects-importer:latest```

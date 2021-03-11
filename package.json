@@ -1,5 +1,5 @@
 {
-  "name": "shopify-redirects",
+  "name": "shopify-redirects-importer",
   "version": "1.0.0",
   "description": "A script to import redirects into Shopify shop.",
   "main": "index.js",
