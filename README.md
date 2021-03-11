@@ -2,7 +2,7 @@ This script helps to import a huge amount of redirects into a Shopify shop.
 
 # Prerequisites
 
-* Put redirects into redirects.json.
+* Put redirects into redirects.json
 * Create .env file based on .env.example
 
 # Launch locally
