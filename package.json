@@ -1,4 +1,10 @@
 {
+  "name": "shopify-redirects",
+  "version": "1.0.0",
+  "description": "A script to import redirects into Shopify shop.",
+  "main": "index.js",
+  "author": "Denis Soldatov",
+  "license": "MIT",
   "dependencies": {
     "@shopify/shopify-api": "^1.1.0"
   },
