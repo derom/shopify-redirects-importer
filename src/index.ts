@@ -1,11 +1,20 @@
 import http from 'http';
 import url from 'url';
 import querystring from 'querystring';
-import Shopify, { DataType } from '@shopify/shopify-api';
+import Shopify, { DataType, ApiVersion } from '@shopify/shopify-api';
 import { readFileSync } from 'fs';
 require('dotenv').config();
 
 const { SHOP, ACCESS_TOKEN, OVERRIDE_EXISTING_REDIRECTS } = process.env
+
+Shopify.Context.initialize({
+	API_KEY: "dummy",
+	API_SECRET_KEY: "dummy",
+	SCOPES: ["dummy"],
+	HOST_NAME: "dummy",
+	IS_EMBEDDED_APP: false,
+	API_VERSION: ApiVersion.January21
+});
 
 const client = new Shopify.Clients.Rest(SHOP, ACCESS_TOKEN);
 const redirects = JSON.parse(readFileSync('./redirects.json', 'utf8'));
@@ -33,7 +42,7 @@ redirects.forEach(async (redirect: any) => {
 		console.log(`new redirect: ${ JSON.stringify(newRedirect.body) }`);
 	}
 
-	if (overrideRedirect &&existingRedirect.body.redirects.length === 1) {
+	if (overrideRedirect && existingRedirect.body.redirects.length === 1) {
 		const redirectId = existingRedirect.body.redirects[0].id;
 		const updatedRedirect = await client.put({
 			path: `redirects/${redirectId}`,
