@@ -6,5 +6,9 @@
 	{
 		"path": "/test2",
 		"target": "https://google.com"
+	},
+	{
+		"path": "/test3",
+		"target": "https://google.com"
 	}
 ]
