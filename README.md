@@ -5,7 +5,7 @@ This script helps to import a huge amount of redirects into a Shopify shop.
 * Put redirects into redirects.json
 * Create .env file based on .env.example
 
-# Configuration
+# Configuration (.env)
 
 * SHOP - host of target shop
 * ACCESS_TOKEN - can be obtained using this guide https://shopify.dev/tutorials/authenticate-a-private-app-with-shopify-admin#generate-credentials-from-the-shopify-admin
