@@ -21,10 +21,6 @@ const redirects = JSON.parse(readFileSync('./redirects.json', 'utf8'));
 const updateRedirects = (UPDATE_EXISTING_REDIRECTS === "true");
 
 redirects.forEach(async (redirect: any) => {
-	const body = {
-		"redirect": redirect
-	};
-
 	const existingRedirect: any = await client.get({
 		path: 'redirects',
 		query: {
@@ -36,7 +32,9 @@ redirects.forEach(async (redirect: any) => {
 	if (existingRedirect.body.redirects.length === 0) {
 		const newRedirect = await client.post({
 			path: 'redirects',
-			data: body,
+			data: {
+				"redirect": redirect
+			},
 			type: DataType.JSON,
 		});
 		console.log(`new redirect: ${ JSON.stringify(newRedirect.body) }`);
