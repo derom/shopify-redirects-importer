@@ -9,7 +9,7 @@ This script helps to import a huge amount of redirects into a Shopify shop.
 
 * SHOP - domain of target shop
 * ACCESS_TOKEN - can be obtained using this guide https://shopify.dev/tutorials/authenticate-a-private-app-with-shopify-admin#generate-credentials-from-the-shopify-admin
-* OVERRIDE_EXISTING_REDIRECTS - override existing redirect if its path matches a path from the redirects.json
+* UPDATE_EXISTING_REDIRECTS - update existing redirect if its path matches a path from the redirects.json
 
 # Launch locally
 * Install dependencies ```yarn install```
