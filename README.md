@@ -1,3 +1,4 @@
+# Purpose
 This script helps to import a huge amount of redirects into a Shopify shop.
 
 # Prerequisites
@@ -8,12 +9,12 @@ This script helps to import a huge amount of redirects into a Shopify shop.
 # Configuration (.env)
 
 * SHOP - domain of target shop
-* ACCESS_TOKEN - can be obtained using this guide https://shopify.dev/tutorials/authenticate-a-private-app-with-shopify-admin#generate-credentials-from-the-shopify-admin
+* ACCESS_TOKEN - can be obtained using [this guide](https://shopify.dev/tutorials/authenticate-a-private-app-with-shopify-admin#generate-credentials-from-the-shopify-admin)
 * UPDATE_EXISTING_REDIRECTS - update existing redirect if its path matches a path from the redirects.json
 
 # Launch locally
 * Install dependencies ```yarn install```
-* Launch the script ```yarn start ```
+* Launch the script ```yarn start```
 
 # Launch locally in docker
 * ```sudo docker build -t shopify-redirects-importer .```
