@@ -1,5 +1,5 @@
 # Purpose
-This script helps to import a huge amount of redirects into a Shopify shop.
+This script helps to import a huge amount of redirects into a Shopify shop. It gives more control over the process than the default import from Shopify's UI.
 
 ## Prerequisites
 
