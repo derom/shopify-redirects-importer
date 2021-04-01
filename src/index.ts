@@ -24,8 +24,7 @@ redirects.forEach(async (redirect: any) => {
 	const existingRedirect: any = await client.get({
 		path: 'redirects',
 		query: {
-			"path": redirect.path,
-			"limit": 50
+			"path": redirect.path
 		},
 	});
 
