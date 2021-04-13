@@ -1,6 +1,3 @@
-import http from 'http';
-import url from 'url';
-import querystring from 'querystring';
 import Shopify, { DataType, ApiVersion } from '@shopify/shopify-api';
 import { readFileSync } from 'fs';
 require('dotenv').config();
